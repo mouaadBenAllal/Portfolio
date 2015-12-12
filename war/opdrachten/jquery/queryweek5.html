@@ -1,0 +1,79 @@
+<!DOCTYPE html> <html>
+<head>
+<title>jQuery Week 5</title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<link href = "style.css" rel = "stylesheet">
+<link href = "querystyle.css" rel = "stylesheet">
+</head>
+ <body>
+<section>
+<h1 class = "week">Opdrachten week 5</h1>
+<hr>
+<h1>Opdracht 1: Type Of</h1>
+<p>
+Ik moest het type opvragen van de volgende waardes: <br> 
+</p>
+
+<p>
+<strong>
+type 1: 16.4          				<br>            
+type 2: 15                          <br>
+type 3: Volvo                       <br>
+type 4: 12-12-2015                  <br>
+type 5: {a:1, b:2}                  <br>
+type 6: [‘Piet’, ‘Jan’, ‘Klaas’]    <br>
+</strong>
+<p>
+
+<br>
+<p class = "type1"></p>
+<p class = "type2"></p> 
+<p class = "type3"></p>
+<p class = "type4"></p>
+<p class = "type5"></p>
+<p class = "type6"></p>
+
+<!-- CODE VAN TYPE OF -->
+<script>
+var eerste = 16.4;
+var tweede = 15;
+var derde  = "Volvo";
+var vierde = 12-12-2015;
+var vijfde = {a:1, b:2};
+var zesde  = ["Piet", "Jan", "Klaas"];
+
+$(document).ready(function() {
+	$(".type1").html ("Het type van type 1 is " + typeof eerste);
+	$(".type2").html ("Het type van type 2 is " + typeof tweede);
+	$(".type3").html ("Het type van type 3 is " + typeof derde);
+	$(".type4").html ("Het type van type 4 is " + typeof vierde);
+	$(".type5").html ("Het type van type 5 is " + typeof vijfde);
+	$(".type6").html ("Het type van type 6 is " + typeof zesde);
+});
+</script>
+<!-- /CODE VAN TYPE OF -->
+<hr>
+<h1>Image Slider</h1> <br>
+
+<div id = "slider">
+<img class = "slider-image" src = "politieapp-pics/meissie.jpg">
+<img class = "slider-image" src = "politieapp-pics/meissie2.jpg">
+</div>	
+
+<script>
+$("#slider").click(herres);
+
+function herres() {
+	$(".slider-image").animate({
+		"left":"-100%"
+	}, 2000, function() {
+	
+		
+	});
+}
+</script>
+	 	
+	
+</section>
+</body>
+</html> 

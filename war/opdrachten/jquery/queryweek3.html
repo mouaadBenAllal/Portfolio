@@ -1,0 +1,71 @@
+<!DOCTYPE html> <html>
+<head>
+<title>jQuery Week 3 </title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<link href = "style.css" rel = "stylesheet">
+<link href = "querystyle.css" rel = "stylesheet">
+</head>
+ <body>
+<section>
+<h1 class = "week">Opdrachten week 3</h1>
+<hr>
+<h1>Opdracht 1 - Blokje Klikken</h1>
+
+<!-- BLOKJES -->
+<div class = "blok1">
+</div>
+<div class = "blok2">
+</div> <br> <br>
+<!-- BLOKJES -->
+
+
+<button onclick = "verkleuren()">RESET</button> 
+<script>
+$(".blok1").mouseover (function() {
+	$(this).css( "background-color", "green" )
+});
+
+$(".blok1").mouseout (function () {
+	$(this).css ("background-color" , "blue")
+});
+
+$(".blok2").mouseover (function() {
+	$(this).css("background-color", "magenta")
+});
+
+$(".blok2").mouseout (function() {
+	$ (this).css("background-color" , "blue")
+});
+
+//KNOP
+function verkleuren() {
+	$('.blok1, .blok2').css ('background-color', 'white');
+
+}
+</script> 
+<hr>
+<h1 class = "opdracht2">Opdracht 2 - Animatie</h1>
+<p class = "opdracht2"> 
+De code zorgt ervoor dat de h1 tags in een animatie verdwijnt, <br>
+je kan de snelheid onderin aanpassen, zodra je op de knop klikt <br>
+verdwijnt deze tekst en de titel in een snellere animatie.
+</p>
+
+<button onclick = "opdracht2()">Animeren</button>
+
+    <script>
+    function opdracht2() {
+    	$(".opdracht2").animate ({
+    		height: "toggle"
+    	}, 
+    	700, function() {
+    		
+    	});
+    }  
+    </script>
+<hr>
+<h1 class = "bluetitle"><a href = "/queryweek4.html">Opdrachten Week 4</a></h1>
+
+</section>
+</body>
+</html>

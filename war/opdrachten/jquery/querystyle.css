@@ -1,0 +1,26 @@
+.blok1 {
+	border:           1px solid black;
+	width:                      200px;
+	height:                     200px;
+	margin-left:                 30px;
+	display:              inline-flex;
+	background-color:           white;
+}
+
+.blok2 {
+	border:        	  1px solid black;
+	width:          	        200px;
+	height:             	    200px;
+	margin-left:            	 30px;
+	display: 		 	  inline-flex;
+	background-color: 		    white;
+}
+
+table {
+	margin-left: 30px;
+}
+
+.tableRed {
+	color: red;
+	font-style: bold;
+}

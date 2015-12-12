@@ -1,0 +1,114 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+section {
+	margin: auto;
+	width: 970px;
+	height: auto;
+	background-color: #0c004f;
+	border: 3px solid white;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 50px;
+}
+
+
+ul, li {
+	color: white;
+	list-style-type: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 30px;
+}
+
+p{
+	
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 30px;
+	
+}
+
+footer {
+	position: 				                 relative;
+	width:                                      970px;
+	display:                                    block;
+	background-image: url("main/footerwallpaper.jpg");
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+a {
+	
+}
+`
+a:link {
+   color: #f90006;
+   text-decoration: underline;
+}
+
+a:visited {
+    color: #f90006;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #00c6c6;
+}
+
+a:active {
+    
+}
+
+h1.week {
+	color: #ff0000;
+	text-align: center;
+}
+
+button {
+	margin-left: 30px;
+}
+
+input {
+	margin-left: 30px;
+}
+
+/* slider opdracht */
+#slider {
+	margin-left: 30px;
+	overflow: hidden;
+	width: 300px;
+	white-space: nowrap;
+}
+
+.slider-image {
+	width: 100%;
+	position: relative;
+}
+/* politieapp */
+#boven, #midden, #onder {
+	border: 1px solid black;
+	width: 300px;
+	height: 200px;	
+	background-color: black;
+}
+
+
+
+

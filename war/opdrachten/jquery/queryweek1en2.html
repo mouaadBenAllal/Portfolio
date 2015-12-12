@@ -1,0 +1,108 @@
+<!DOCTYPE html> <html>
+<head>
+<title>jQuery Week 1</title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<link href = "style.css" rel = "stylesheet">
+</head>
+ <body>
+<section>
+<h1 class = "week">Opdrachten week 1</h1>
+<hr>
+<script>
+$( document ).ready(function() {
+ 	$('h1.hello').html("Opdracht 1: hello world");
+});
+
+</script>
+<h1 class = "hello"> jQuery Menu</h1>
+<hr>
+
+<h1>Opdracht 2: jQuery Menu</h1> <br>
+<ul class = "opdracht2">
+        <li class = "opdracht2">Home</li>
+        <li class = "opdracht2">Contact</li>
+        <li class = "opdracht2">Producten</li>
+</ul>
+<script>
+$(document).ready(function() {
+$('li.opdracht2').css({"background-color":"gray", "margin":"5px 0px", "padding":"20px 30px", "display":"inline",});
+$('ul.opdracht2').css('height', '50px');
+$('ul.opdracht2').css('font-size', '120%');
+$('li.opdracht2').css('color', 'black');
+});
+</script>
+<hr>
+<h1 class = "week">Opdrachten week 2</h1>
+<hr>
+<h1>Opdracht 1 - Test Event</h1> 
+<p> Eerste paragraaf</p>
+<p> Tweede paragraaf</p>
+<p> Nog een paragraaf </p>
+<p>Als je op de tekst klikt dan schuift <br>
+   het omhoog en verdwijnt de tekst.
+</p>
+<script>
+$("p").click(function() {
+	$(this).slideUp();
+});
+</script>
+<hr>
+<p class = "demo">
+Maak een webpagina met twee paragrafen tekst.<br>
+Maak een script met jQuery dat je kunt activeren met een knop.<br>
+</p>
+
+<p class = "demo">
+Maak een webpagina met twee paragrafen tekst.<br>
+Maak een script met jQuery dat je kunt activeren met een knop.<br>
+</p>
+
+<button onclick="tekstVerdwijnen()">Verdwijn Tekst</button>
+<script>
+function tekstVerdwijnen() {
+    $(".demo").slideUp();
+}
+
+</script>
+<hr>
+<h1>Opdracht 4 - Lijsten Kleuren</h1>
+
+<ul class = "apen">
+<li class = "first">Berberse Slingeraap</li>
+<li>Chimpansee</li>
+<li>Donkey Kong</li>
+<li>Brulaap</li>
+<li>Leipe Aap</li>
+</ul>
+
+<ul class = "autos">
+<li class = "first">Tesla</li>
+<li>Mercedes</li>
+<li>BMW</li>
+<li>Audi</li>
+<li>Porsche</li>
+</ul> 
+
+<button onClick = "apenRood()">Apen</button> <br> <br>
+<button onClick = "autosGroen()">Auto Merken</button> <br> <br>
+<button onClick = "blauw()">1 list blauw kleuren</button>
+<script>
+function apenRood() {
+	$('ul.apen li').css ('color','red');
+}
+
+function autosGroen() {
+	$('ul.autos li').css ('color','green');
+}
+
+function blauw() {
+	$('li.first').css ('color','blue');
+}
+</script>
+<hr>
+<h1 class = "bluetitle"><a href = "/queryweek3.html">Opdrachten Week 3</a></h1>
+
+</section>
+
+</body>
+</html>

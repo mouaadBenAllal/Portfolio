@@ -1,0 +1,45 @@
+<!DOCTYPE html> <html>
+<head>
+<title>jQuery Week 4</title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<link href = "style.css" rel = "stylesheet">
+<link href = "querystyle.css" rel = "stylesheet">
+</head>
+ <body>
+<section>
+<h1 class = "week">Opdrachten week 4</h1>
+<hr>
+<h1>Opdracht 1 - Javascript variabelen</h1>
+
+<table>
+<tr>
+<td><input id = "getal" type = "text"></td>
+<td><input id = "knop" type = "submit" value = "check" onclick = "rekenen()"></td>
+</tr>
+</table>
+
+
+<p class = "inputtext">
+
+</p>
+
+<!-- SCRIPT -->
+<script>
+function rekenen(){
+	var x = $("#getal").val();
+	var text = "Wacht op input";
+	var mijnDouble = 5.466;
+	
+//Controleer of x een getal tussen 0 en 10 is.
+    if (x < 1 || x > 10) { 
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    $(".inputtext").html(text);  //Heee dit is jQuery!!!
+}
+</script>
+
+</section>
+</body>
+</html>
